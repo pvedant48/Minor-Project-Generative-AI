@@ -1,0 +1,7 @@
+venv/
+*.pdf
+notebookLaunch.sh
+FashionMNIST/
+FFHQ-256/
+KTH-TIPS/
+savedModels/*

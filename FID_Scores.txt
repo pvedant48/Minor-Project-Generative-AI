@@ -1,0 +1,19 @@
+DCGAN MNIST 28 x 28 GrayScale dataset, feature size 2048, 20 epochs
+FID score: 48.62425231933594
+
+DCGAN KTH-TIPS 200 x 200 GrayScale dataset, feature size 2048, 20 epochs
+FID score: 324.16766357421875
+
+
+This result was because of bad training loop, discriminator overpowering generator.
+DCGAN KTH-TIPS 200 x 200 RGB dataset, feature size 2048
+FID score: 321.27276611328125       20 epochs
+FID score: 370.184326171875         40 epochs
+
+After making some changes in training loop:
+(1) Generator learns faster than Discriminator (lr of gen > lr of disc)
+(2) Applying label smoothing
+(3) Applying occasional noisy flips (5% of times, labels are swapped)
+
+FID score: 257.23699951171875       20 epochs
+FID score: 285.73565673828125       40 epochs
