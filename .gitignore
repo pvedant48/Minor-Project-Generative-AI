@@ -4,5 +4,6 @@ venv/
 notebookLaunch.sh
 FashionMNIST/
 FFHQ-256/
+ffhq256/
 KTH-TIPS/
-# savedModels/*
+savedModels/*
